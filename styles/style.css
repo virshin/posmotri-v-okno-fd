@@ -93,14 +93,13 @@ ul {
   column-gap: 30px;
   align-items: end;
   max-width: 1140px;
-  padding-block-start: 3px;
 }
 
 .result {
   grid-area: result;
   display: flex;
   flex-direction: column;
-  margin-top: 78px;
+  margin-top: 90px;
 }
 
 .result__video-container {
@@ -184,6 +183,7 @@ ul {
   overflow: hidden;
   font-family: "Oswald", sans-serif;
   font-weight: 700;
+  line-height: 94%;
   font-size: 30px;
   text-transform: uppercase;
   text-overflow: ellipsis;
@@ -191,6 +191,9 @@ ul {
 }
 
 .content__video-card-description {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
   overflow: hidden;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 400;
@@ -282,18 +285,19 @@ ul {
   outline: none;
 }
 
+.search-form__textfield:focus {
+  outline: none;
+}
+
 .search-form__textfield:active {
-  border: 1px solid transparent;
+  border-inline-start: 1px solid transparent;
+  border-inline-end: 1px solid transparent;
+  border-block-start: 1px solid #fff;
+  border-block-end: 1px solid #fff;
 }
 
 .search-form__textfield::placeholder {
   color: rgba(255, 255, 255, 0.7);
-  font-family: inherit;
-  font-weight: 400;
-  font-size: 18px;
-  font-style: normal;
-  line-height: 22px;
-  text-align: left;
 }
 
 .search-form__checkbox-list {

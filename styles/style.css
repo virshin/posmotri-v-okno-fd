@@ -32,6 +32,7 @@ ul {
   inline-size: 1200px;
   block-size: 100%;
   align-items: center;
+  justify-content: center;
   margin: auto;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
@@ -105,7 +106,7 @@ ul {
 .result__video-container {
   position: relative;
   height: 386px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .result__video {
@@ -200,7 +201,6 @@ ul {
   font-size: 18px;
   line-height: 17px;
   text-overflow: ellipsis;
-  white-space: nowrap;
 }
 
 .content__card-link:hover {
@@ -287,13 +287,6 @@ ul {
 
 .search-form__textfield:focus {
   outline: none;
-}
-
-.search-form__textfield:active {
-  border-inline-start: 1px solid transparent;
-  border-inline-end: 1px solid transparent;
-  border-block-start: 1px solid #fff;
-  border-block-end: 1px solid #fff;
 }
 
 .search-form__textfield::placeholder {
